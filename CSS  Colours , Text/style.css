@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin: 50px;
+}
+
+.container{
+    
+     background-color: #FEF4E6;
+    border: 2px solid #5b0909;
+    border-radius: 20px;
+    width: 250px;
+    padding: 30px ;
+    margin: 200px 20px 20px 560px ;
+
+    /* fonts and sizes */
+   
+    font-family: "PT Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40;
+    font-style: normal;
+
+    
+}
+
+p{
+    text-align: center;
+}
+.topic{
+    color: #E70765;
+    font-family: "Great Vibes", cursive;
+    font-weight: 800;
+    font-size: x-large;
+    margin: 0;
+    padding:0;
+    }
+.scaler{
+text-transform:uppercase;
+font-family: "Oswald", sans-serif; font-weight: 700;
+  font-style:normal;
+  font-size: large;
+  letter-spacing: 3px ;
+}
