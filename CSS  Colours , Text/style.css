@@ -13,7 +13,7 @@ body {
     border-radius: 20px;
     width: 250px;
     padding: 30px;
-    margin: 200px 20px 20px 610px;
+    margin: 100px 20px 20px 610px;
 
     /* fonts and sizes */
 
@@ -21,13 +21,14 @@ body {
     font-optical-sizing: auto;
     font-weight: 40;
     font-style: normal;
-
-
 }
+
+
 
 p {
     text-align: center;
 }
+
 
 .topic {
     color: #E70765;
@@ -53,10 +54,32 @@ p {
     padding: 0;
 }
 
-.plane {
+/*  In Case  of icons from image  */
+/* .plane {
     list-style-image: url(Images/plane-solid.svg);
+} */
+
+/* .bike {
+    list-style-image: url(Images/bicycle-solid.svg);
+} */
+
+.custom-icon {
+    list-style-type: none;
+    list-style-position: outside;
 }
 
-.bike {
-    list-style-image: url(Images/bicycle-solid.svg);
+h3 {
+    text-align: center;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FEF4E6;
+    color: #5b0909;
+    text-align: center;
+    border-top: 2px solid #5b0909;
 }
