@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #F0F2F5;
+        font-family: 'Popins', sans-serif;
+        color: #1c1e21;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 20%;
+        top: 150px;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    p.logo {
+        font-size: 100px;
+        margin: auto;
+        padding: 0 40px;
+    }
+
+    .form {
+        width: 30%;
+        height: 50vh;
+        background-color: #FFFFFF;
+        position: absolute;
+        right: 90px;
+        top: 50px;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 1);
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="main">
+
+        <div class="logo"><img src="images/Fb-logo.svg" alt="facebook logo">
+            <p> Facebook helps you connect and share with the people in your life. </p>
+        </div>
+
+        <div class="form">
+            <input type="email" name="email_phoneno" id="email_phoneno" placeholder="Email or Phone No">
+            <br>
+            <input type="password" name="password" id="password" placeholder="password">
+            <br>
+            <a href="#"> Forgot password?</a>
+            <button type="submit"> Login </button>
+            <button> Create a New Account </button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
