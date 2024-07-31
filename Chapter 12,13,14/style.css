@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #F0F2F5;
+    font-family: 'Popins', sans-serif;
+    color: #1c1e21;
+    line-height: 1.34;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20%;
+    width: 40%;
+    top: 150px;
+}
+
+img {
+    width: 50%;
+    margin: 0px;
+}
+
+.disc p {
+    top: 0px;
+    font-size: 25px;
+    font-weight: 400;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.form {
+    width: 25%;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 180px;
+    top: 50px;
+    box-shadow: 4px 4px 10px #aaacb06d, -4px -4px 10px #aaacb06d;
+    border-radius: 7px;
+    margin: 40px 0 0;
+    padding: 20px 0 28px 20px;
+    font-size: 12px;
+    outline: none;
+
+
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #0866ff;
+    box-shadow: 1px 1px 6px #0866ff;
+}
+
+.row {
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 95%;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid #dddfe2;
+}
+
+.green {
+    background-color: #36a420;
+    border-color: #36a420;
+    margin: auto;
+    width: 60%;
+    color: #F0F2F5;
+    margin-left: 17%;
+}
+
+.green:hover {
+    border: 0.5px solid #36a420;
+    box-shadow: 1px 1px 10px #36a420;
+}
+
+.blue {
+    background-color: #0866ff;
+    border-color: #0866ff;
+    color: #F0F2F5;
+    margin-bottom: 20px;
+}
+
+.blue:hover {
+    border: 1px solid #0866ff;
+    box-shadow: 1px 1px 10px #0866ff;
+}
+
+button {
+    cursor: pointer;
+}
+
+hr {
+    margin: 20px 0 30px 0;
+    width: 95%;
+    border: 1px solid #dddfe2;
+}
+
+.forgot {
+    text-align: center;
+    cursor: pointer;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: #0866ff;
+    font-size: 14px;
+    font-weight: 500;
+    direction: ltr;
+}
+
+.forgot:hover {
+    text-decoration: underline #0866ff;
+}
