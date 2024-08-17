@@ -12,7 +12,7 @@ nav {
     background-color: rgba(10, 10, 10, 0.8);
     color: rgba(255, 255, 255, .8);
     width: 100%;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: space-around;
 }
@@ -40,6 +40,55 @@ nav .nav-item:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.main {
+    background-color: #FFFFFF;
+}
+
+.front {
+    background-image: url("./image/cover/hero_paralympics__f0u9lu6obdiu_mediumtall_2x.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.front-content {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #FFFFFF;
+    top:20%;
+}
+
+.front-content p {
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: .012em;
+}
+
+.front-content button {
+    color: black;
+    font-size: 14px;
+    font-weight: 200;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 12px;
+    animation: background-color 1s
+}
+.front-content button:hover{
+background-color:rgb(244, 244, 244)
 }
 /* 
 .search-box {
@@ -84,5 +133,17 @@ nav .nav-item:hover {
         display: flex;
     }
 
+    /* .front{
+        background-image: url("");
+        width: 100%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       } */
 
 }
