@@ -4,8 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 nav {
     height: 40px;
     top: 0;
@@ -42,54 +40,86 @@ nav .nav-item:hover {
     gap: 20px;
 }
 
+.flex-col {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
 .main {
     background-color: #FFFFFF;
 }
 
 .front {
     background-image: url("./image/cover/hero_paralympics__f0u9lu6obdiu_mediumtall_2x.jpg");
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     height: 80vh;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 2px;
+    /* 
+    display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-shadow: ;
     flex-direction: column;
+    gap: 50px;
 }
 
-.front-content {
-    font-size: 32px;
+text-shadow {
+    text-shadow: rgb(165, 165, 163) 5px 5px 20px;
+}
+
+h2 {
+    font-size: 40px;
     line-height: 1.125;
     font-weight: 600;
     letter-spacing: .004em;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    color: #FFFFFF;
-    top:20%;
 }
 
-.front-content p {
-    font-size: 19px;
+.front-content {
+
+    color: #FFFFFF;
+    padding-top: 10%;
+}
+
+p {
+    font-size: 24px;
     line-height: 1.21053;
     font-weight: 400;
     letter-spacing: .012em;
 }
 
+
+.btn-rounded {
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/* 
+button {
+    border: none;
+   
+    padding: 12px 19px;
+    cursor: pointer;
+  
+} */
+
 .front-content button {
     color: black;
-    font-size: 14px;
-    font-weight: 200;
     background-color: #FFFFFF;
-    border: none;
-    border-radius: 50px;
-    padding: 8px 12px;
     animation: background-color 1s
 }
-.front-content button:hover{
-background-color:rgb(244, 244, 244)
+
+.front-content button:hover {
+    background-color: rgb(240, 237, 237)
 }
+
 /* 
 .search-box {
     height: 40px;
@@ -102,7 +132,27 @@ background-color:rgb(244, 244, 244)
     justify-content: center;align-items: center;
     gap: 30px;
 } */
+.iphone {
+    background-image: url("./image/promo_iphone_medium.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    background-color: black;
+    height: 65vh;
+    color: #FFFFFF;
+    padding-top: 5%;
 
+}
+
+.iphone p {
+    font-size: 18px;
+}
+
+.bubble{
+    background-color: #F5F5F7;
+    
+}
 @media only screen and (max-width:833px) {
 
 
