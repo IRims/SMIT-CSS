@@ -152,7 +152,6 @@ button {
 
 .bubble {
     background-color: #F5F5F7;
-
 }
 
 @media only screen and (max-width:833px) {
@@ -201,3 +200,6 @@ button {
         width: 70%;
     }
 }
+
+
+
