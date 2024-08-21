@@ -21,8 +21,8 @@ nav .nav-item {
     font-size: 14px;
 }
 
-i {
-    font-size: 14px;
+nav>i {
+    font-size: 13px;
 }
 
 .bars {
@@ -32,6 +32,8 @@ i {
 nav .nav-item:hover {
     color: #FFFFFF;
 }
+
+
 
 .flex {
     display: flex;
@@ -43,6 +45,7 @@ nav .nav-item:hover {
 .flex-col {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     flex-direction: column;
 }
 
@@ -58,10 +61,6 @@ nav .nav-item:hover {
     height: 80vh;
     text-align: center;
     line-height: 2px;
-    /* 
-    display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     text-shadow: 5px 5px 20px black;
     flex-direction: column;
     gap: 50px;
@@ -106,7 +105,7 @@ p .coll-items {
     font-weight: 400;
     letter-spacing: -.022em;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    position: relative;
+
 }
 
 .btn-rounded {
@@ -144,7 +143,7 @@ p .coll-items {
     gap: 30px;
 } */
 .iphone {
-    background-image: url("./image/iphone_medium.jpg");
+    background-image: url("./image/collection/iphone_medium.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -173,15 +172,11 @@ p .coll-items {
 }
 
 .coll-content-top {
-    padding-top: 5%;
+    padding-top: 10%;
+    text-align: center;
+
 }
 
-
-#vision .coll-content-bottom {
-    position: absolute;
-    bottom: 5%;
-    right: auto;
-}
 
 .text-grey {
     color: #7E7E83;
@@ -189,7 +184,7 @@ p .coll-items {
 }
 
 #ipad {
-    background-image: url("./image/ipadpro__large.jpg");
+    background-image: url("./image/collection/ipadpro__large.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -199,7 +194,7 @@ p .coll-items {
 }
 
 #intelligence {
-    background-image: url("./image/ai_medium.jpg");
+    background-image: url("./image/collection/ai_medium.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -210,23 +205,24 @@ p .coll-items {
 }
 
 #vision {
-    background-image: url("./image/vision_pro_medium.jpg");
+    background-image: url("./image/collection/vision_pro_medium.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    justify-content: end;
+    padding: 0 10% 10% 10%;
     width: 100%;
     height: 80vh;
     color: #000000;
 }
 
-.coll-items,
-i {
+.coll-items>i {
     font-size: 40px;
     font-weight: 500;
 }
 
 #watch {
-    background-image: url("./image/apple_watch_medium_2x.jpg");
+    background-image: url("./image/collection/apple_watch_medium_2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -240,7 +236,7 @@ i {
 } */
 
 #card {
-    background-image: url("./image/card_medium.jpg");
+    background-image: url("./image/collection/card_medium.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -248,17 +244,22 @@ i {
     height: 80vh;
     color: #000;
 }
-#trade{
-    background-image: url("./image/tradein_medium.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 80vh;
-    color: #000;
-}
-@media only screen and (max-width:833px) {
 
+#trade {
+    background-image: url("./image/collection/tradein_medium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    color: #000;
+}
+
+@media only screen and (max-width:833px) and (min-width:400px) {
+
+    nav>i {
+        font-size: 13px;
+    }
 
     .inner {
         visibility: hidden;
@@ -306,5 +307,51 @@ i {
     /* media query */
     .collection {
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    nav>i {
+        font-size: 10px;
+    }
+
+    .inner {
+        visibility: hidden;
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+    }
+
+    .icon-left {
+        justify-content: left;
+        margin-left: 4%;
+    }
+
+    .icon-right {
+        justify-content: center;
+        align-items: right;
+        margin-right: 4%;
+    }
+
+    .bars {
+        display: flex;
+    }
+
+    .bubble img {
+        width: 80%;
+    }
+
+    .collection {
+        grid-template-columns: 1fr;
+    }
+
+    .front-content {
+        color: #FFFFFF;
+        padding-top: 20%;
     }
 }
