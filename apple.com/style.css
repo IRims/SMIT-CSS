@@ -265,6 +265,39 @@ p .coll-items {
     color: #000;
 }
 
+
+/* slider 2 */
+
+
+.slider-box {
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+    background-image: url("./image/slider2/476x268\ \(1\).jpg");
+    position: relative;
+    transition: filter 0.3s ease;
+}
+
+.slider-box>button {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-box:hover>button {
+    visibility: visible;
+}
+
+.slider-box:hover {
+    filter: grayscale(80%);
+}
+
 /* footer css */
 .upper-text-container p {
     font-size: 1em;
