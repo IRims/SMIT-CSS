@@ -266,17 +266,50 @@ p .coll-items {
 }
 
 
-/* slider 2 */
-
-
+/* slider 2  start */
 .slider-box {
-    width: 250px;
-    height: 150px;
-    display: inline-block;
-    background-image: url("./image/slider2/476x268\ \(1\).jpg");
+    width: 400px;
+    height: 250px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease-in-out;
+    z-index: 2;
+    padding: 20px;
+    color: white;
 }
+
+/* for diffent image  */
+.img-1 {
+    background-image: url("./image/slider2/476x268\ \(1\).jpg");
+}
+
+.img-2 {
+    background-image: url("./image/slider2/476x268\ \(2\).jpg");
+}
+
+.img-3 {
+    background-image: url("./image/slider2/476x268\ \(3\).jpg");
+
+}
+
+.img-4 {
+    background-image: url("./image/slider2/476x268\ \(4\).jpeg");
+
+}
+
+.img-5 {
+    background-image: url("./image/slider2/476x268\ \(5\).jpeg");
+
+}
+
+.img-6 {
+    background-image: url("./image/slider2/572x322.jpg");
+
+}
+
+
 
 .slider-box>button {
     visibility: hidden;
@@ -292,11 +325,163 @@ p .coll-items {
 
 .slider-box:hover>button {
     visibility: visible;
+    z-index: 3;
 }
 
 .slider-box:hover {
-    filter: grayscale(80%);
+    filter: contrast(70%);
+    filter: blur(80%);
 }
+
+/* for text n slider 2 */
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: end;
+}
+
+.text {
+    font-size: 24px;
+    /* Text size */
+    font-weight: bold;
+}
+
+.icon>i {
+    width: 40px;
+    height: auto;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* Container styles */
+.scrolling-text-container {
+    background-color: #eff5ff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Text styles */
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+    margin: 0 5px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+.scrolling-text-container {
+    background-color: #eff5ff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+
+    animation: scroll-left var(--marquee-speed) linear infinite;
+}
+
+.scrolling-text {
+    display: flex;
+}
+
+.text-container {
+    position: relative;
+    height: 100%;
+    /* Ensure container takes up full height */
+}
+
+.text-container h4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 3%;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+    margin: 0 5px;
+}
+
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+/* slider 2 end */
+
+
+
+
 
 /* footer css */
 .upper-text-container p {
