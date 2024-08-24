@@ -140,18 +140,7 @@ p .coll-items {
     background-color: rgb(240, 237, 237)
 }
 
-/* 
-.search-box {
-    height: 40px;
-    top: 40px;
-    background-color: rgba(10, 10, 10, 0.8);
-    color: rgba(255, 255, 255, .8);
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;align-items: center;
-    gap: 30px;
-} */
+/* nav end here  */
 .iphone {
     background-image: url("./image/collection/iphone_medium.jpg");
     background-repeat: no-repeat;
@@ -263,6 +252,97 @@ p .coll-items {
     width: 100%;
     height: 80vh;
     color: #000;
+}
+
+
+
+/* crousal css   */
+.gallery {
+    background: #EEE;
+}
+
+.gallery-cell {
+    width: 80%;
+    height: 90vh;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+}
+
+.gallery-cell:nth-child(1) {
+    background-image: url("./image/thumb/leagues-cup-2024/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-cell:nth-child(2) {
+    background-image: url("./image/thumb/friday-night-baseball/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-cell:nth-child(3) {
+    background-image: url("./image/thumb/lady-in-the-lake/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-cell:nth-child(4) {
+    background-image: url("./image/thumb/presumed-inoccent/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-cell:nth-child(5) {
+    background-image: url("./image/thumb/sunny/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-cell:nth-child(6) {
+    background-image: url("./image/thumb/the-morning-show/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gallery-cell:nth-child(7) {
+    background-image: url("./image/thumb/yo-gabba-gabba-land/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gallery-cell:nth-child(8) {
+    background-image: url("./image/thumb/time-bandits/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gallery-cell:nth-child(9) {
+    background-image: url("./image/thumb/wemen-in-blue/689x387.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
 }
 
 
@@ -672,10 +752,82 @@ p .coll-items {
 
     .footer-links-wrapper h3:after {
         font-family: "FontAwesome";
-        content: "\f067";
         padding-left: 10px;
         position: absolute;
         right: 25px;
+    }
+
+    .gallery-cell {
+        width: 90%;
+        height: 90vh;
+        margin-right: 4px;
+    }
+
+    .gallery-cell:nth-child(1) {
+        background-image: url("./image/thumb/leagues-cup-2024/274x593.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-cell:nth-child(2) {
+        background-image: url("./image/thumb/friday-night-baseball/274x593\ \(3\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-cell:nth-child(3) {
+        background-image: url("./image/thumb/lady-in-the-lake/274x593\ \(4\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-cell:nth-child(4) {
+        background-image: url("./image/thumb/presumed-inoccent/274x593\ \(6\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-cell:nth-child(5) {
+        background-image: url("./image/thumb/sunny/274x593\ \(2\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-cell:nth-child(6) {
+        background-image: url("./image/thumb/the-morning-show/274x593\ \(8\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .gallery-cell:nth-child(7) {
+        background-image: url("./image/thumb/time-bandits/274x593\ \(7\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .gallery-cell:nth-child(8) {
+        background-image: url("./image/thumb/wemen-in-blue/274x593.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .gallery-cell:nth-child(9) {
+        background-image: url("./image/thumb/Bad-Monkey/548x1186.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
     }
 }
 
