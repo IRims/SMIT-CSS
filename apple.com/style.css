@@ -67,6 +67,7 @@ nav .nav-item:hover {
     background-image: url("./image/cover/hero_paralympics__f0u9lu6obdiu_mediumtall_2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 80vh;
     text-align: center;
@@ -144,14 +145,13 @@ p .coll-items {
 .iphone {
     background-image: url("./image/collection/iphone_medium.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     width: 100%;
     background-color: black;
     height: 65vh;
     color: #FFFFFF;
     padding-top: 5%;
-
 }
 
 .iphone p {
@@ -173,9 +173,13 @@ p .coll-items {
 .coll-content-top {
     padding-top: 10%;
     text-align: center;
-
 }
 
+.coll-content-top,
+.coll-content-bottom {
+    width: 100%;
+    height: 80vh;
+}
 
 .text-grey {
     color: #7E7E83;
@@ -187,8 +191,6 @@ p .coll-items {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 80vh;
     background-color: #000000;
 }
 
@@ -197,8 +199,6 @@ p .coll-items {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 80vh;
     background-color: #f5f5f7;
     color: #000000;
 }
@@ -210,14 +210,14 @@ p .coll-items {
     background-position: center;
     justify-content: end;
     padding: 0 10% 10% 10%;
-    width: 100%;
-    height: 80vh;
     color: #000000;
 }
 
 .coll-items>i {
     font-size: 40px;
     font-weight: 500;
+    height: 100vh;
+    width: 100%;
 }
 
 #watch {
@@ -225,8 +225,6 @@ p .coll-items {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 80vh;
     color: #FFFFFF;
 }
 
@@ -239,8 +237,6 @@ p .coll-items {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 80vh;
     color: #000;
 }
 
@@ -249,8 +245,6 @@ p .coll-items {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 80vh;
     color: #000;
 }
 
@@ -556,13 +550,7 @@ p .coll-items {
     }
 }
 
-
 /* slider 2 end */
-
-
-
-
-
 /* footer css */
 .upper-text-container p {
     font-size: 1em;
@@ -573,6 +561,7 @@ p .coll-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
 
 .footer-wrapper {
     background-color: #f5f5f7;
@@ -597,54 +586,6 @@ p .coll-items {
     text-decoration: underline;
 }
 
-
-.my-apple-wrapper {
-    padding-bottom: 15px;
-    margin-top: 10px;
-}
-
-.copyright {
-    margin-top: 15px;
-}
-
-.footer-country {
-    margin-top: 8px;
-}
-
-.footer-country {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flag-wrapper {
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 5px;
-}
-
-.footer-country-name {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.footer-links-terms ul {
-    justify-content: space-around;
-    flex-direction: row;
-    flex-flow: row;
-}
-
-.footer-links-terms ul li {
-    border-right: 1px solid #d2d2d7;
-}
-
-.footer-links-terms ul li:first-child {
-    padding-left: 0;
-}
-
-.footer-links-terms ul li:last-child {
-    border-right: 0;
-}
-
 .footer-links-wrapper label>h3 {
     font-size: 12px;
     font-weight: 600;
@@ -665,13 +606,59 @@ p .coll-items {
     margin-bottom: 20px;
 }
 
-
 .upper-text-container a {
     color: #515154;
 }
 
+/* footer ending  */
 
-@media only screen and (max-width:833px) and (min-width:400px) {
+.footer-base {
+    padding-top: 34px;
+    margin-bottom: 1rem;
+    color: #888;
+    font-size: 12px;
+}
+
+.footer-more-ways {
+    margin-bottom: 7px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.footer-legal-copyright {
+    margin-right: 30px;
+    float: left;
+    margin-top: 3px;
+}
+
+.footer-legal-links {
+    float: left;
+}
+
+.footer-legal-links a {
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    display: inline-block;
+    margin-top: 3px;
+    white-space: nowrap;
+    color: #555;
+}
+
+.footer-legal-links a:last-child {
+    border-right: none;
+}
+
+.footer-legal-links a:hover {
+    color: #333;
+}
+
+@media only screen and (max-width:833px) and (min-width:451px) {
+
 
     nav>i {
         font-size: 13px;
@@ -704,19 +691,35 @@ p .coll-items {
         display: flex;
     }
 
+    .front {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .iphone {
+        height: 60vh;
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 0px;
+    }
+
     .bubble img {
         width: 70%;
     }
+
+    /* collection css */
 
     .collection,
     .row {
         grid-template-columns: 1fr;
     }
 
+    .coll-content-top,
+    .coll-content-bottom {
+        height: 70vh;
+    }
+
     /* footer css start  */
-
-
-
     .footer-wrapper {
         font-size: .7em;
         font-weight: 400;
@@ -763,85 +766,52 @@ p .coll-items {
         right: 5%;
     }
 
+    /* crousal 1  */
     .gallery-cell {
-        width: 90%;
+        width: 100%;
         height: 90vh;
-        margin-right: 4px;
     }
 
     .gallery-cell:nth-child(1) {
         background-image: url("./image/thumb/leagues-cup-2024/274x593.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .gallery-cell:nth-child(2) {
         background-image: url("./image/thumb/friday-night-baseball/274x593\ \(3\).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .gallery-cell:nth-child(3) {
         background-image: url("./image/thumb/lady-in-the-lake/274x593\ \(4\).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .gallery-cell:nth-child(4) {
         background-image: url("./image/thumb/presumed-inoccent/274x593\ \(6\).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .gallery-cell:nth-child(5) {
         background-image: url("./image/thumb/sunny/274x593\ \(2\).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .gallery-cell:nth-child(6) {
         background-image: url("./image/thumb/the-morning-show/274x593\ \(8\).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
 
     }
 
     .gallery-cell:nth-child(7) {
         background-image: url("./image/thumb/time-bandits/274x593\ \(7\).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
     }
 
     .gallery-cell:nth-child(8) {
         background-image: url("./image/thumb/wemen-in-blue/274x593.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
     }
 
     .gallery-cell:nth-child(9) {
         background-image: url("./image/thumb/Bad-Monkey/548x1186.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
 
     }
 }
 
-
-
-
-
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 450px) {
     nav>i {
         font-size: 10px;
     }
@@ -873,8 +843,37 @@ p .coll-items {
         display: flex;
     }
 
+    .front {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .iphone {
+        height: 55vh;
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 1rem !important;
+    }
+
     .bubble img {
-        width: 80%;
+        width: 110%;
+    }
+
+    .bubble {
+        margin-top: 1rem !important;
+    }
+
+    /* collection */
+    .coll-content-top,
+    .coll-content-bottom {
+        height: 55vh;
+    }
+
+    .coll-content-top {
+        padding-top: 8%;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .collection,
@@ -882,9 +881,16 @@ p .coll-items {
         grid-template-columns: 1fr;
     }
 
+    /* collection no margins  */
+    .collection {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
     /* footer css start  */
     .upper-text-container p {
-        font-size: 1em;
+        font-size: .7em;
+        font-weight: 400;
         text-align: left;
     }
 
@@ -936,4 +942,54 @@ p .coll-items {
     }
 
     /* transation end  */
+    /* crousal 1  */
+    .gallery-cell {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .gallery {
+        margin: 0 !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .gallery-cell:nth-child(1) {
+        background-image: url("./image/thumb/leagues-cup-2024/274x593.jpg");
+    }
+
+    .gallery-cell:nth-child(2) {
+        background-image: url("./image/thumb/friday-night-baseball/274x593\ \(3\).jpg");
+    }
+
+    .gallery-cell:nth-child(3) {
+        background-image: url("./image/thumb/lady-in-the-lake/274x593\ \(4\).jpg");
+    }
+
+    .gallery-cell:nth-child(4) {
+        background-image: url("./image/thumb/presumed-inoccent/274x593\ \(6\).jpg");
+    }
+
+    .gallery-cell:nth-child(5) {
+        background-image: url("./image/thumb/sunny/274x593\ \(2\).jpg");
+    }
+
+    .gallery-cell:nth-child(6) {
+        background-image: url("./image/thumb/the-morning-show/274x593\ \(8\).jpg");
+
+    }
+
+    .gallery-cell:nth-child(7) {
+        background-image: url("./image/thumb/time-bandits/274x593\ \(7\).jpg");
+
+    }
+
+    .gallery-cell:nth-child(8) {
+        background-image: url("./image/thumb/wemen-in-blue/274x593.jpg");
+
+    }
+
+    .gallery-cell:nth-child(9) {
+        background-image: url("./image/thumb/Bad-Monkey/548x1186.jpg");
+
+    }
 }
