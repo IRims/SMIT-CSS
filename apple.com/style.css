@@ -671,24 +671,6 @@ p .coll-items {
     color: #515154;
 }
 
-/* footer ending  */
-
-.footer-base {
-    padding-top: 34px;
-    margin-bottom: 1rem;
-    color: #888;
-    font-size: 12px;
-}
-
-.footer-more-ways {
-    margin-bottom: 7px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid #d6d6d6;
-}
-
-.nowrap {
-    white-space: nowrap;
-}
 
 
 
@@ -1013,6 +995,7 @@ p .coll-items {
         right: 5%;
     }
 
+
     /* transation end  */
     /* crousal 1  */
     .gallery-cell {
@@ -1064,32 +1047,4 @@ p .coll-items {
         background-image: url("./image/thumb/Bad-Monkey/548x1186.jpg");
 
     }
-}
-
-.footer-legal-copyright {
-    margin-right: 30px;
-    float: left;
-    margin-top: 3px;
-}
-
-.footer-legal-links {
-    float: left;
-}
-
-.footer-legal-links a {
-    border-right: 1px solid #d6d6d6;
-    margin-right: 10px;
-    padding-right: 12px;
-    display: inline-block;
-    margin-top: 3px;
-    white-space: nowrap;
-    color: #555;
-}
-
-.footer-legal-links a:last-child {
-    border-right: none;
-}
-
-.footer-legal-links a:hover {
-    color: #333;
 }
