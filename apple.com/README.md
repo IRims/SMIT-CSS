@@ -1,6 +1,6 @@
-#Apple website clone:
+# Apple website clone:
 
-##Using:
+## Using:
 
 - html 
 - css  
